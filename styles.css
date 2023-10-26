@@ -22,6 +22,8 @@ h1{
     
     font-size: 60px;
     font-weight: 600;
+    margin-top: 50px;
+    margin-bottom: 100px;
     text-align: center;
     color: #f9f9f9;
     text-shadow:6px 6px #3d032c;
@@ -70,3 +72,60 @@ button{
   margin-right: auto;
   margin-left: auto;
 }
+
+
+@media screen and (max-width:600px) {
+    h1{
+    
+        font-size: 60px;
+        font-weight: 600;
+        text-align: center;
+        color: #f9f9f9;
+        text-shadow:6px 6px #3d032c;
+    }
+    input{
+        border-color: #FFFFFF #327CB5 #327CB5 #FFFFFF;
+        border-radius: 10px 10px 10px 10px;
+        border-style: solid;
+        background-color: #2a2a2a;
+        border-width: 1px;
+        font-size: 20px;
+        height: 3vh;
+        margin-top: 30px;
+        box-shadow: 1px 1px 3px #d8d8d8;
+        color: #f9f9f9;
+        width: 60vw;
+        padding: 5px;
+        text-align: center;
+        text-shadow: 1px 1px 1px #000000;
+    }
+    button{
+        height: 5vh;
+        width: 50vw;
+        margin: 20px 20px 20px 20px;
+        color: white;
+        box-shadow: 0px 0px 5px white;
+        text-shadow: 2px 2px 4px #2a2a2a;
+        font-weight: bold;
+        font-size: large;
+        background-color: rgb(0, 0, 0);
+        border-radius: 10px;
+    }
+    img{
+        border: 5px solid white;
+        border-radius: 10px;
+        box-shadow: 0px 0px 5px #2a2a2a;
+        height: 250px;
+        width: 250px;
+        margin-top: 50px;
+    }
+    .contents{
+        background-color: rgb(9, 57, 64);
+        padding: 10px 10px 10px 10px;
+        width: 80vw;
+        height: 60vh;
+        margin: 0 auto ;
+        margin-left: 5vw;
+        border-radius: 15px;
+    }
+    }
