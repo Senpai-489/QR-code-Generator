@@ -1,32 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 body{
-    font-family: Helvetica;
-    background-image: linear-gradient(to bottom right, #2a2a2a,#000);
-    height: 100vh;
-    width: 100vw;
+    font-family: 'Roboto Condensed', sans-serif;
+    background-image: url(https://wallpapercave.com/wp/wp8623049.png);
+
+    background-repeat: repeat-y;
+    height: 100%;
+    width: 100%;
+}
+#about{
+    color: wheat;
+    text-align: center;
+    margin: 20px;
+    font-size: 20px;
+}
+header{
+    background-color: rgb(35, 35, 35);
+    height: 10vh;
+}
+#nav:hover{
+    color: rgb(127, 126, 126);
+    display: inline-block;
+    
+
+}
+.tech{
+    justify-content: space-between;
+    margin: 50px 65px;
+    filter: drop-shadow(0px 0px 3px white);
+    border: none;
+}
+#nav{
+    text-decoration: none;
+    color: #fcfcfc;
+    filter: drop-shadow(0px 0px 3px #000000);
+    font-size: 20px;
+    position: relative;
+    top: 20px;
+     left: 40px;
+    font-weight: 800;
+    margin-right: 50px;
+}
+#downloadbutton:hover{
+    background-color: white;
+    color:black;
+}
+#downloadbutton{
+    position: absolute;
+    top: 300px;
+    font-weight: 200;
+    left: 100px;
+    border-radius: 8px;
+    height: 4vh;
+    width: 10vw;
+    text-align: center;
+    background-color: black;
+    filter: drop-shadow(inset 0px 0px 2px white);
+    text-decoration: none;
+    color: #fcfcfc;
+    font-size: 20px;
+
 }
 img{
     border: 5px solid white;
     border-radius: 10px;
-    box-shadow: 0px 0px 5px #2a2a2a;
-    height: 300px;
-    width: 300px;
+    /* height: 300px;
+    width: 300px; */
 }
 .contents{
-    background-color: rgb(9, 57, 64);
+    background-color: rgb(35, 35, 35);
     padding: 10px 10px 10px 10px;
     width: 70vw;
     margin: 0 auto;
-    border-radius: 15px;
+    background-image: linear-gradient(to top left,#2a2a2a,#555555);
+ background-size: cover;
+    filter: drop-shadow(0px 0px 10px #f8f8f8);
+    border-radius: 50px;
 }
 h1{
     
     font-size: 60px;
     font-weight: 600;
-    margin-top: 50px;
-    margin-bottom: 100px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     text-align: center;
-    color: #f9f9f9;
-    text-shadow:6px 6px #3d032c;
+    color: #707070;
+    text-shadow:2px 2px 3px #3d032c;
 }
 label{
     color: #bababa;
@@ -38,11 +99,11 @@ label{
 }
 input{
     border-color: #FFFFFF #327CB5 #327CB5 #FFFFFF;
-    border-radius: 10px 10px 10px 10px;
+    border-radius: 25px;
     border-style: solid;
     background-color: #2a2a2a;
     border-width: 1px;
-    font-size: 30px;
+    font-size: 20px;
     height: 5vh;
     box-shadow: 1px 1px 3px #d8d8d8;
     color: #f9f9f9;

@@ -14,6 +14,6 @@ $("button").on("click", buttClicked);
             var qrNew = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data="+button1;
             
             $('#target').attr("src",qrNew);
-           
+            $('#downloadbutton').attr("href",qrNew);
         }
     });

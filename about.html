@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <a id="nav"  href="index.html">Home</a>
+        <a id="nav"  href="about.html">About</a>
+        <a id="nav"  href="authors.html">Authors</a>
+    </header>
+    <p id="about">As QR codes have become an integral part of our daily online activities such as Digital Payments, Data Sharing etc. We decided to make a simple tool that takes Text as Input and produces a Quick Response Code (QR code) that can be scanned to retrieve the given data.<br><br>Here's some more info about QR codes</p>
+    
+    <h1>Tool Workflow</h1>
+    <img style="height: 800px;width: 800px;border: none; position: relative;left: 350px;filter: none;" src="asddas.png" alt="workflow">
+    <h1>Technologies Used</h1>
+    <div class="tech">
+    <img class="tech" src="https://cdn.icon-icons.com/icons2/2107/PNG/512/file_type_html_icon_130541.png" style="display: inline-block; height: 200px;width: 200px;">
+    <img class="tech" src="https://www.logolynx.com/images/logolynx/8f/8fb97dec724d750d2085173816712ffc.png " style="display: inline-block; height: 220px;width: 220px;">
+    <img class="tech" src=" https://icon-library.com/images/javascript-icon-png/javascript-icon-png-23.jpg" style="display: inline-block; height: 200px;width: 200px;">
+    <img class="tech" src=" https://logodix.com/logo/941120.png" style="display: inline-block; height: 200px;width: 200px;">
+</div>
+<h1>Encoding Process</h1>
+    <p id="about" style="text-align: left;">
+        1. Select Data Type: Determine the type of data to be encoded, such as text, numeric data, binary data, or Kanji characters.<br><br>
+        2. Encode Data: Convert the selected data type into a binary representation. For alphanumeric characters, this often involves encoding them as ASCII values. Numeric data is encoded as binary-coded decimal (BCD). Each data type has its own encoding method.<br><br>
+        3. Add Error Correction: Introduce error correction to make the QR code more robust against damage or distortion. Error correction codes are added to the data, allowing for the recovery of lost or damaged information. The level of error correction can be adjusted based on the desired trade-off between data capacity and error resistance.<br><br>
+        4. Divide Data into Blocks: Divide the encoded data and error correction codes into blocks to optimize the distribution across the QR code.<br><br>
+        5. Choose QR Code Version and Mode: QR codes come in different versions, which determine the size of the matrix. The version is chosen based on the amount of data to be encoded. Additionally, the encoding mode (numeric, alphanumeric, byte, or Kanji) is selected based on the type of data.<br><br>
+        6. Generate Final Bitstream: Combine the encoded data, error correction codes, version information, and other necessary details to create the final bitstream that represents the QR code.<br><br>
+        7. Create Matrix: The final bitstream is arranged into a matrix of black and white squares. The arrangement is determined by a specific pattern required for QR codes, which includes positioning markers, alignment patterns, and timing patterns. These patterns assist in locating and decoding the QR code.<br><br>
+        8. Quiet Zone: Add a quiet zone around the QR code to ensure that it is properly recognized by scanners. The quiet zone is an area of white space surrounding the QR code.<br><br>
+    </p>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="index.js" charset="utf-8"></script>
+</body>
+</html>
