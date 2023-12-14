@@ -1,3 +1,5 @@
+
+
 $(document).ready(function() {
     
 
@@ -12,8 +14,10 @@ $("button").on("click", buttClicked);
         function buttClicked() {
             var button1 = $("#text_url").val();
             var qrNew = "https://api.qrserver.com/v1/create-qr-code/?size=300x300&data="+button1;
-            
+            var button2 = $("#resolution").val();
+            var qrNew1 = `https://api.qrserver.com/v1/create-qr-code/?size=${button2}&data=`+button1;
+            console.log(qrNew1);
             $('#target').attr("src",qrNew);
-            $('#downloadbutton').attr("href",qrNew);
+            $('#downloadbutton').attr("href",qrNew1);
         }
     });

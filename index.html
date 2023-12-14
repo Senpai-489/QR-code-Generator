@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>QR Code Gen</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap" rel="stylesheet">
@@ -17,11 +17,17 @@
     </header>
     <h1>QR Code Generator</h1>
     <div class="contents">
-    <label for="text_url">Enter URL below</label>
+    <label for="text_url">Enter URL</label>
     <input type="text" id="text_url" class="centre" placeholder="https://www.example.com">
     <button class="centre">Generate QR</button>
     <img class="centre" id="target" src="load.jpg" alt="QR" title="QR will be displayed Here">
     <a class="centre" href="load.jpg" id="downloadbutton" >Full Screen View</a>
+    <select name="resolution" id="resolution">
+        <option value="150x150">150x150px</option>
+        <option value="300x300">300x300px</option>
+        <option value="500x500">500x500px</option>
+        <option value="800x800">800x800px</option>
+      </select>
         </div>
         
         <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
